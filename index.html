@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Diversion Ilimitada</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #000066, #000099);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: url('./images/fondodslweb.jpg') no-repeat center center fixed; /* Cambia 'ruta-de-tu-imagen.png' por la URL o ruta de tu imagen */
+            background-size: cover; /* Hace que la imagen cubra todo el fondo */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed; /* Fija la imagen de fondo */
+            height: 100%; /* Asegura que cubra toda la altura de la ventana */
+            width: 100%; /* Asegura que cubra todo el ancho de la ventana */
+            overflow: hidden; /* Opcional: Evita que el contenido desborde */
+            position: fixed; /* Fija la posición para evitar el desplazamiento */
+        }
+
+
+        .hero {
+            min-height: 80vh; /* Ajusta para que el footer tenga espacio */
+            position: relative;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh; /* Ajusta según la altura que necesites */
+        }
+
+        .hero h1 {
+            font-size: calc(2.5rem + 1vw); /* Escala el tamaño proporcionalmente al ancho de la ventana */
+            margin: 0 0 20px 0;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px #000;
+            animation: pulse 2s infinite;
+        }
+
+        .hero .subtext {
+            font-size: 1.5rem;
+            color: #FFFFFF;
+            margin: 10px 0 20px;
+        }
+
+        .cta-button {
+
+            display: inline-block;
+            background: linear-gradient(45deg, #FFD700, #FF8C00);
+            color: #000;
+             padding: calc(10px + 0.5vw) calc(20px + 1vw); /* Escala el padding proporcionalmente */
+            font-size: calc(1rem + 0.5vw); /* Escala el texto del botón */
+            font-weight: bold;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(255, 140, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+
+        .cta-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(255, 140, 0, 0.7);
+        }
+
+        /* .images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+       .images img {
+            height: 200px;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .images img:hover {
+            transform: scale(1.1);
+        }*/
+
+        .footer {
+            position: fixed; /* Cambiado de fixed a relative */
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #CCCCCC;
+            margin-top: 0px; /* Añade espacio entre el contenido principal y el footer */
+            padding: 10px 0; /* Espaciado interno para mejorar la visibilidad */
+        }
+        
+
+
+       
+
+        @keyframes pulse {
+            0%, 100% {
+                text-shadow: 2px 2px 4px #000, 0 0 10px #FFD700, 0 0 20px #FFD700;
+            }
+            50% {
+                text-shadow: 2px 2px 4px #000, 0 0 20px #FFD700, 0 0 40px #FFD700;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1 style="margin-top: 10px; margin-bottom: 1px;">¡GANA LAS 24HS CON NOSOTROS!</h1>
+        <p class="subtext">Registrate AHORA y obtené 30% DE BONO</p>
+
+        <div class="cta-section">
+        <a href="https://wa.me/5492233438146?text=¡Buenas!%20Me%20gustaría%20crear%20un%20usuario.%20Mi%20nombre%20es:" class="cta-button">
+            <i class="fab fa-whatsapp"></i> ¡CREA TU USUARIO AHORA!
+        </a>
+        </div>
+
+        <!--<div class="images">
+            <img src="./images/gates of olympus.jpg" alt="Zeus">
+            <img src="./images/big bass.webp" alt="Pescador">
+            <img src="./images/jjw.webp" alt="Joker">
+        </div>-->
+    </div>
+
+    <div class="footer">
+        Juega con responsabilidad | Para mayores de 18 años | Todos los derechos reservados
+    </div>
+</body>
+</html>
